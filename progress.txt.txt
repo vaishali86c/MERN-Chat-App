@@ -7,3 +7,6 @@ depencencies - bcrypt, jsonwebtoken, express, moongoose
 4. i created routes using express 
   and create register and login route and add hashing password 
  and also jwt authorization 
+5.depencecies for jwt screte key generation-> 
+dotenv , crypto 
+i completed jwt scret key generation.
