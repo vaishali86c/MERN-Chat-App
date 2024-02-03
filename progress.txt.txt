@@ -1,0 +1,9 @@
+1.backend dependencies installation
+2.create server files (mongo db)
+create configuration files
+depencencies - bcrypt, jsonwebtoken, express, moongoose
+
+3. create all server and configuration files and connection made
+4. i created routes using express 
+  and create register and login route and add hashing password 
+ and also jwt authorization 
