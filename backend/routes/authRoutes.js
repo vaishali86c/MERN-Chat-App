@@ -7,7 +7,7 @@ const { generateToken, verifyToken } = require('../utils/auth');
 const jwt = require('jsonwebtoken');
 const { dbURL }  = require('../config/db');
 const User = require('../models/User');
-
+const authMiddleware = require('../middleware/authMiddleware');
 // register a new user
 
 router.post('/register', async (req, res) => {
@@ -62,5 +62,11 @@ router.post('/login', async (req, res) => {
         res.status(500).json({ message: 'Internal server error' });
     }
 });
+
+// route that require authentication
+router.get('/protected-route', authMiddleware, (req, res) => {
+    const userId = req.user.userId;
+    res.json({ message: 'Authenticated route', userId });
+});
  
-  module.exports = router;
+module.exports = router;

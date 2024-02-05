@@ -10,3 +10,13 @@ cors
 5.depencecies for jwt screte key generation-> 
 dotenv , crypto 
 i completed jwt secret key generation.
+6.middleware authentication - depencecies (http-errors)
+
+///next project steps tommarow
+
+backend - > 1. middleware status code 
+i already created code for this just refer code and 
+add middleware authentication1
+in the .env file i dont have any keyS
+
+2. zod lib for validation username and password
